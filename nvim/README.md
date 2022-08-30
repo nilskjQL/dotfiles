@@ -1,6 +1,6 @@
 # Neovim config
 
-Basic IDE configuration for neovim
+Basic IDE configuration for neovim, based on [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide)
 
 ## Install Neovim 0.7
 
