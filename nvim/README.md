@@ -1,4 +1,4 @@
-# dotfiles
+# Neovim config
 
 Basic IDE configuration for neovim
 
