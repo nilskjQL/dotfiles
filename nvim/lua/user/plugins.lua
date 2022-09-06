@@ -116,6 +116,7 @@ return packer.startup(function(use)
 		end,
 	})
 	use({ "xiyaowong/nvim-transparent" })
+	use({ "edgedb/edgedb-vim" })
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" }) -- The completion plugin
@@ -161,6 +162,9 @@ return packer.startup(function(use)
 			require("trouble").setup({})
 		end,
 	})
+
+	-- jupyter
+	use({ "untitled-ai/jupyter_ascending.vim" })
 
 	-- Git Fugitive
 	use("tpope/vim-fugitive")

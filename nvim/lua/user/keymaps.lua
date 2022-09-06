@@ -55,6 +55,10 @@ keymap("v", ">", ">gv", opts)
 
 -- Plugins --
 
+-- Jupyter sync
+keymap("n", "<leader><leader>x", "<Plug>JupyterExecute")
+keymap("n", "<leader><leader>X", "<Plug>JupyterExecuteAll")
+
 -- RestNvim
 keymap("n", "<leader>h", "<Plug>RestNvim")
 keymap("n", "<leader>hp", "<Plug>RestNvimPreview")
