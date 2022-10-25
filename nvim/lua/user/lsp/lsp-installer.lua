@@ -15,6 +15,7 @@ local servers = {
 	"yamlls",
 	"elixirls",
 	"tailwindcss",
+	"astro",
 }
 
 lsp_installer.setup()
@@ -45,6 +46,11 @@ for _, server in pairs(servers) do
 	if server == "elixirls" then
 		local elixirOptions = require("user.lsp.settings.elixirls")
 		opts = vim.tbl_deep_extend("force", elixirOptions, opts)
+	end
+
+	if server == "astro" then
+		local astroOptions = require("user.lsp.settings.astro")
+		opts = vim.tbl_deep_extend("force", astroOptions, opts)
 	end
 
 	lspconfig[server].setup(opts)

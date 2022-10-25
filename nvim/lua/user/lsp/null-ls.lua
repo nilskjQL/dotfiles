@@ -26,7 +26,7 @@ null_ls.setup({
 	end,
 	sources = {
 		formatting.prettier.with({
-			extra_filetypes = { "toml" },
+			extra_filetypes = { "toml", "astro" },
 		}),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
